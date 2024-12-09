@@ -13867,9 +13867,11 @@ function send_email()
   emailjs.send("service_02dsiju","template_ap1ki6n",templateParams).then(
     (response) => {
       console.log('SUCCESS!', response.status, response.text);
+      alert("Message Send !");
     },
     (error) => {
       console.log('FAILED...', error);
+      alert("Failed to send Message !!")
     },
   );
 }
